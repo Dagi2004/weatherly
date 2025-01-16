@@ -1,4 +1,4 @@
-const apiKey = "ee6230c4c435815b3e54fdc1ed8959e7"; // OpenWeatherMap API key
+const apiKey = "Your Key"; // OpenWeatherMap API key
 let currentCity = ""; // To store the current searched city
 let currentStatus; // To store the current API response status
 let refreshInterval; // To hold the interval for auto-refresh
