@@ -31,7 +31,7 @@ A simple and intuitive weather dashboard built with **HTML**, **CSS**, and **Jav
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/AsratY/weatherly.git
+   git clone https://github.com/Dagi2004/weatherly.git
    ```
 
 2. Navigate into the project directory:
@@ -54,14 +54,4 @@ This project uses the **OpenWeatherMap API**. To use the project locally, you ne
    ```javascript
    const apiKey = 'your-api-key';
    ```
-
-## Issues Faced
-
-- **Deprecated API Endpoints**: Initially faced issues using outdated endpoints of the OpenWeatherMap API, which required switching to newer API versions.
-- **Deployment Security**: Encountered security warnings due to HTTP weather icon URLs, which was fixed by using HTTPS for secure content delivery.
-
-## Future Improvements
-
-- **Weekly Forecast**: Expand the app to display a 7-day forecast.(now it displays 5-days)
-- **Enhanced Design**: Implement additional styling using a CSS framework like Tailwind CSS for faster development and a more modern UI.
 
