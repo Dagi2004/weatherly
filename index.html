@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata and linking to stylesheets -->
+    <meta charset="UTF-8" />
+    <!-- Declares the character encoding (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the webpage is responsive on mobile devices -->
+    <link rel="icon" type="image/jpg" href="/images/LogoStabelLight.png" />
+    <title>Weatherly</title>
+    <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to external CSS file for styling -->
+  </head>
+  <!-- Automatically get user's current location and display weather when the page loads-->
+  <body onload="getLocationAndFetchWeather()">
+    <!-- Main container of the weather dashboard -->
+    <div id="app">
+      <!-- Main heading for the dashboard -->
+      <span id="logoHeader">
+        <img src="/images/Logo.gif" alt="Logo" id="logoImg" />
+        <p id="websiteName">Weatherly</p></span
+      >
+
+      <!-- Search section where the user can input the city name -->
+      <div id="searchDiv">
+        <!-- Input field for the city name -->
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <!-- Button to trigger the search -->
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Div to display error messages if the search fails (initially hidden) -->
+      <div id="errorMessage" class="error-message"></div>
+
+      <!-- Section to display the current weather -->
+      <div id="currentWeatherDiv" class="weather-section">
+        <!-- City name displayed here -->
+        <div class="weather-container-head">
+          <img id="weatherIcon" alt="" />
+          <p id="weatherCondition"></p>
+          <!-- Temperature, humidity, and wind speed displayed here -->
+          <p id="temperature"></p>
+          <h2 id="cityName"></h2>
+          <p id="humidity"></p>
+          <p id="windSpeed"></p>
+        </div>
+        <!-- Icon for the weather condition -->
+
+        <!-- Button to refresh the current weather data (hidden by default) -->
+        <button id="refreshBtn" class="hidden">Refresh</button>
+      </div>
+
+      <!-- Section to display the 5-day weather forecast (hidden by default) -->
+      <div id="forecastDiv" class="hidden">
+        <h2 id="fiveDay">5-Day Forecast</h2>
+        <!-- Subheading for the forecast section -->
+        <!-- Container for forecast cards (each card displays the weather for one day) -->
+        <div id="forecastCards" class="forecast-container"></div>
+      </div>
+    </div>
+
+    <!-- Script linking to the JavaScript file that handles the weather data fetching and logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
